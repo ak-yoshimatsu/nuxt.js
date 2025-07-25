@@ -6,6 +6,7 @@
         <NuxtLink to="/">Home (Layout)</NuxtLink>
         <NuxtLink to="/products">Products (Layout)</NuxtLink>
         <NuxtLink to="/users">ユーザー</NuxtLink>
+        <NuxtLink to="/posts">POST画面</NuxtLink>
       </nav>
     </header>
     <main>
