@@ -6,6 +6,7 @@
       <li v-for="post in posts" :key="post.id">
         <h3>{{ post.title }}</h3>
         <p>{{ post.body }}</p>
+        <NuxtLink :to="`/posts/${post.id}`">詳細を見る</NuxtLink>
       </li>
     </ul>
     <p v-else>投稿がありません。</p>
