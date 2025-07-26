@@ -1,5 +1,14 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
+  "compilerOptions": {
+    "baseUrl": ".", // プロジェクトルートを基準とする
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      // shadcn-nuxt の componentDir 設定に合わせたエイリアス
+      // これにより、"@/components/ui/button" のようにインポートできるようになる
+      "@/components/ui/*": ["./components/ui/*"]
+    }
+  },
   "files": [],
   "references": [
     {
